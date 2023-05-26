@@ -13,3 +13,14 @@ class TutorialItem(scrapy.Item):
     title = scrapy.Field()
     info = scrapy.Field()
     pass
+
+
+class HealthItem(scrapy.Item):
+    category = scrapy.Field()
+    section = scrapy.Field()
+    title = scrapy.Field()
+    authors = scrapy.Field()
+    reversion = scrapy.Field()
+    content = scrapy.Field()
+    ct = scrapy.Field()
+    pass

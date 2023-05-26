@@ -8,6 +8,8 @@ from scrapy import signals
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
 
+def get_cookies_dict():
+    cookies_str = ''
 
 class TutorialSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
