@@ -18,7 +18,7 @@ class TutorialPipeline:
         self.ws.append(('主题', '章节', '标题', '作者', '审查时间', '内容'))
 
     def close_spider(self, spider):
-        self.wb.save('默沙东数据.xlsx')
+        self.wb.save('dist/默沙东数据.xlsx')
 
     def process_item(self, item, spider):
         category = item.get('category', '')
